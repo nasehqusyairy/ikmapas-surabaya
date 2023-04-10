@@ -1,6 +1,11 @@
 import { ReactNode } from "react";
 
-function AuthLayout({ children, title }: { children: ReactNode, title: String }) {
+interface AuthLayoutProps {
+  children: ReactNode
+  title: String
+}
+
+function AuthLayout({ children, title }: AuthLayoutProps) {
   return (
     <main className='bg-primary'>
       <div className="container">

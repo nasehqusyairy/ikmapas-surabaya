@@ -15,12 +15,13 @@ function HeroSection() {
               </p>
               <p>
                 <a href="#about" className="btn btn-primary btn-lg" >
-                  Selengkapnya</a>
+                  Penasaran? Gas Kepoin🔥
+                </a>
               </p>
             </div>
           </div>
           <div className="col-12 col-lg">
-            <Image src={img} alt="" className="img-fluid" />
+            <Image priority src={img} alt="" className="img-fluid" />
           </div>
         </div>
       </div>

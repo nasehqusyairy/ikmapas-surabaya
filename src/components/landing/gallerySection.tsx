@@ -37,12 +37,12 @@ function GallerySection() {
           ))}
         </div>
       </div>
-      <div className="position-fixed top-0 start-0" style={{ transition: 'all .5s', display: isPreviewing ? 'block' : 'none', zIndex: 1060, backgroundColor: 'rgba(0,0,0,.8)', width: '100vw', opacity: opacity }}>
+      <div className="position-fixed top-0 start-0" style={{ transition: 'all .5s', display: isPreviewing ? 'block' : 'none', zIndex: 1060, width: '100vw', opacity: opacity }}>
         <div className="container">
           <div className="row align-items-center justify-content-center" style={{ height: '100vh' }}>
             <div className="col-12 col-md-6 col-lg-4 text-center">
-              <Image className="img-fluid mb-3" src={image} alt='Image Preview' />
-              <button onClick={() => { preview(false, noImage) }} className="btn btn-link text-white">Tutup</button>
+              <Image style={{ position: 'relative', zIndex: 1062 }} className="img-fluid mb-3" src={image} alt='Image Preview' />
+              <div onClick={() => { preview(false, noImage) }} className="overlay" style={{ backgroundColor: 'rgba(0,0,0,.8)', width: '100vw', height: '100vh', position: 'absolute', zIndex: 1061, top: 0, left: 0 }}></div>
             </div>
           </div>
         </div>
