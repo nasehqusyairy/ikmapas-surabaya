@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import logo from '../../images/logo.png';
 import Link from 'next/link';
-import ThemeOptions from '../themeOptions';
 import { ReactNode } from 'react';
-function MainNavbar({ children }: { children: ReactNode | undefined }) {
+
+interface MainNavbarProps { children: ReactNode }
+
+function MainNavbar({ children }: MainNavbarProps) {
+
   return (
     <div className="navbar-fixed">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow">

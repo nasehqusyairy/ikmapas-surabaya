@@ -1,16 +1,14 @@
-import MainNavbar from "@/components/navbars/mainNavbar";
 import Link from "next/link";
 import img1 from '../../images/news (1).jpg';
 import img2 from '../../images/wafy.jpg';
 import img3 from '../../images/peresmian-web-ikmapas.jpg';
 import MainFooter from "@/components/footers/mainFooter";
+import NavbarLinks from "@/components/navbars/navbarLinks";
 
 function News() {
   return (
     <main>
-      <MainNavbar>
-        <Link className="btn btn-primary" href='/'>Kembali</Link>
-      </MainNavbar>
+      <NavbarLinks />
       <section className="py-5" style={{ minHeight: '100vh' }}>
         <div className="container">
           <h1 className="fw-bold text-primary">IKMAPAS Surabaya News</h1>
