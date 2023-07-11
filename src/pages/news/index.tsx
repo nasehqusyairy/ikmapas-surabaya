@@ -3,7 +3,7 @@ import img1 from '../../images/news (1).jpg';
 import img2 from '../../images/wafy.jpg';
 import img3 from '../../images/peresmian-web-ikmapas.jpg';
 import MainFooter from "@/components/footers/mainFooter";
-import NavbarLinks from "@/components/navbars/navbarLinks";
+import NavbarLinks from "@/components/navbars/mainNavbar";
 
 function News() {
   return (
@@ -11,46 +11,57 @@ function News() {
       <NavbarLinks />
       <section className="py-5" style={{ minHeight: '100vh' }}>
         <div className="container">
-          <h1 className="fw-bold text-primary">IKMAPAS Surabaya News</h1>
+          <h1 className="fw-bold text-primary">IKMAPAS Surabaya Blogs</h1>
           <hr />
-
-          <form>
-            <div className="input-group mb-3">
-              <span className="input-group-text"><i className="bi bi-search"></i></span>
-              <input type="text" className="form-control" placeholder="Cari di Sini..." />
-            </div>
-          </form>
-
           <div className="row">
-            <div className="col-12 col-md-6 col-lg-4">
-              <Link className="text-decoration-none" href='/news/judul-artikel-dua'>
-                <div className="card news-preview mb-3" style={{ backgroundImage: `url('${img2.src}')` }}>
+            <div className="col-12 col-lg-6 mb-3">
+              <Link href='/news/judul-artikel-1'>
+                <div className="card news-preview main-news" style={{ backgroundImage: `url('${img1.src}')` }}>
                   <div className="card-body d-flex flex-column justify-content-end text-white">
-                    <p className='fw-bold text-white'>Diduga Seorang Mahasiswa Kehilanagn HP saat Satu Abad NU</p>
+                    <p><span className="badge bg-primary">#Berita Terkini</span></p>
+                    <p className='fw-bold text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit.sit amet consectetur adipisicing elit.</p>
                     <small>1 hari lalu</small>
                   </div>
                 </div>
               </Link>
             </div>
-            <div className="col-12 col-md-6 col-lg-4">
-              <Link className="text-decoration-none" href='/news/judul-artikel-tiga'>
-                <div className="card news-preview mb-3" style={{ backgroundImage: `url('${img3.src}')` }}>
-                  <div className="card-body d-flex flex-column justify-content-end text-white">
-                    <p className='fw-bold text-white'>Dulur Faris dan Dulur Dzulfikar Terpilih sebagai Ketum dan Waketum 2023-2024</p>
-                    <small>1 hari lalu</small>
+            <div className="col-12 col-lg-6">
+              <div className="row">
+                <div className="col-12">
+                  <div className="card news-preview mb-3" style={{ backgroundImage: `url('${img2.src}')` }}>
+                    <div className="card-body d-flex flex-column justify-content-end text-white">
+                      <p><span className="badge bg-primary">#Berita Terkini</span></p>
+                      <p className='fw-bold text-white'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <small>1 hari lalu</small>
+                    </div>
                   </div>
                 </div>
-              </Link>
+                <div className="col-12 col-lg-6 mb-3">
+                  <div className="card news-preview" style={{ backgroundImage: `url('${img3.src}')` }}>
+                    <div className="card-body d-flex flex-column justify-content-end text-white">
+                      <p><span className="badge bg-primary">#Berita Terkini</span></p>
+                      <p className='fw-bold text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <small>1 hari lalu</small>
+                    </div>
+                  </div></div>
+                <div className="col-12 col-lg-6">
+                  <div className="card news-preview" style={{ backgroundImage: `url('${img3.src}')` }}>
+                    <div className="card-body d-flex flex-column justify-content-end text-white">
+                      <p><span className="badge bg-primary">#Berita Terkini</span></p>
+                      <p className='fw-bold text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <small>1 hari lalu</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4">
-              <Link className="text-decoration-none" href='/news/judul-artikel-satu'>
-                <div className="card news-preview mb-3" style={{ backgroundImage: `url('${img1.src}')` }}>
-                  <div className="card-body d-flex flex-column justify-content-end text-white">
-                    <p className='fw-bold text-white'>Usut Tuntas Tragedi Kanjuruhan 1 Oktober 2022</p>
-                    <small>1 hari lalu</small>
-                  </div>
-                </div>
-              </Link>
+          </div>
+          <div className="row">
+            <div className="col-12">
+
             </div>
           </div>
         </div>

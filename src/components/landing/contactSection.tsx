@@ -20,7 +20,7 @@ function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-3">
+    <section id="contact" className="py-3 mt-5">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">

@@ -6,7 +6,7 @@ import GallerySection from "@/components/landing/gallerySection";
 import HeroSection from "@/components/landing/heroSection";
 import MainNavbar from "@/components/navbars/navbarLayout";
 import ProfileVideoSection from "@/components/landing/profileVideoSection";
-import NavbarItems from "@/components/navbars/navbarItems";
+import NavbarItems from "@/components/navbars/navbarLinks";
 
 export default function Home() {
   return (

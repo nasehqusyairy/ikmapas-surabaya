@@ -11,17 +11,21 @@ function ProfileVideoSection() {
   const [subscriber, setSubscriber] = useState('');
 
   const getData = async () => {
-    const url = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCqzdIrm7ET6UECCpNQLgkyg&maxResults=1&order=date&key=AIzaSyB7FrGiFZn7QmgKb6GQNpJPhfVrwQiydaQ'
-    const url2 = 'https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2Cstatistics&id=UCqzdIrm7ET6UECCpNQLgkyg&maxResults=1&key=AIzaSyB7FrGiFZn7QmgKb6GQNpJPhfVrwQiydaQ'
+    try {
+      const url = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCqzdIrm7ET6UECCpNQLgkyg&maxResults=1&order=date&key=AIzaSyB7FrGiFZn7QmgKb6GQNpJPhfVrwQiydaQ'
+      const url2 = 'https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2Cstatistics&id=UCqzdIrm7ET6UECCpNQLgkyg&maxResults=1&key=AIzaSyB7FrGiFZn7QmgKb6GQNpJPhfVrwQiydaQ'
 
-    const { items: [{ id: { videoId }, snippet: { title, description } }] } = (await axios.get(url)).data
-    const { items: [{ statistics: { subscriberCount: subscriber }, snippet: { title: channel } }] } = (await axios.get(url2)).data
+      const { items: [{ id: { videoId }, snippet: { title, description } }] } = (await axios.get(url)).data
+      const { items: [{ statistics: { subscriberCount: subscriber }, snippet: { title: channel } }] } = (await axios.get(url2)).data
 
-    setId(videoId)
-    setTitle(title)
-    setDescription(description)
-    setChannel(channel)
-    setSubscriber(subscriber)
+      setId(videoId)
+      setTitle(title)
+      setDescription(description)
+      setChannel(channel)
+      setSubscriber(subscriber)
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   useEffect(() => {

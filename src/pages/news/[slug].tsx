@@ -6,7 +6,7 @@ import ad from '../../images/adv.png';
 import Image from "next/image";
 import MainFooter from "@/components/footers/mainFooter";
 import { CSSProperties } from "react";
-import NavbarLinks from "@/components/navbars/navbarLinks";
+import NavbarLinks from "@/components/navbars/mainNavbar";
 import Comments from "@/components/comments/comments";
 
 function newsDetail() {
@@ -28,7 +28,10 @@ function newsDetail() {
               <div className="card border-0 jumbotron" style={jumbotronStyle}>
                 <div className="card-body d-flex justify-content-center align-items-center" style={{ position: 'relative', zIndex: '1' }}>
                   <div className="text-white text-center">
-                    <p><span className="badge bg-primary">Berita Terkini</span></p>
+                    <p>
+                      <span className="badge bg-primary me-1">#Berita Terkini</span>
+                      <span className="badge bg-warning">#Olahraga</span>
+                    </p>
                     <h2 className="fw-bold">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h2>
                     <div className="d-flex justify-content-center align-items-center flex-wrap p-0">
                       <p className="text-white"><Image width={40} src={photo} className="me-2 rounded-circle" alt="" /></p>
@@ -64,19 +67,23 @@ function newsDetail() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi, sunt laudantium quibusdam esse recusandae corrupti eius quae nulla ut expedi.ta corporis voluptates, officia voluptate nihil possimus dolores tenetur similique?
                 </p>
               </div>
-              <Comments />
+              {/* <Comments /> */}
             </div>
             <div className="col-12 col-md-4 col-lg-3">
-              <div className="card border-0 mb-3" style={{ backgroundColor: 'var(--bs-primary-bg-subtle)' }}>
+              <div className="card mb-3">
                 <div className="card-body p-3">
-                  <p>Subscribe untuk informasi konten lebih banyak</p>
                   <form>
-                    <input type="email" name="email" placeholder="Email..." className="form-control mb-3" />
+                    <p>Subscribe untuk informasi konten lebih banyak</p>
+                    <input type="email" name="email" placeholder="Masukkan email..." className="form-control mb-3" />
                   </form>
-                  <button className="btn btn-primary">Subscribe</button>
+                  <div className="d-grid gap-2">
+                    <button className="btn btn-primary">Subscribe</button>
+                  </div>
                 </div>
               </div>
-              <Image src={ad} alt="" className="img-fluid" />
+              <Image src={ad} alt="" className="img-fluid mb-3" />
+              {/* <Image src={ad} alt="" className="img-fluid mb-3" />
+              <Image src={ad} alt="" className="img-fluid" /> */}
             </div>
           </div>
         </div>
