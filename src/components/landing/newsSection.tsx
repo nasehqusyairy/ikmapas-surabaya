@@ -8,7 +8,7 @@ function NewsSection() {
     <section id="news" className="py-3">
       <div className="container">
         <h3 className="fw-bold">Berita Terkini</h3>
-        <p><Link href="/news" className='text-primary'>selengkapnya {'>>'}</Link></p>
+        <p><Link href="/news">selengkapnya</Link></p>
         <div className="row flex-lg-row-reverse">
           <div className="col-12 col-lg-8 mb-3">
             <div className="row">

@@ -1,4 +1,4 @@
-import MainNavbar from "@/components/navbars/mainNavbar";
+import MainNavbar from "@/components/navbars/navbarLayout";
 import Link from "next/link";
 import img from '../../images/about.jpg';
 import Image from "next/image";

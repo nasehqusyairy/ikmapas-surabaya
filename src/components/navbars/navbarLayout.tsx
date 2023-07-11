@@ -3,9 +3,9 @@ import logo from '../../images/logo.png';
 import Link from 'next/link';
 import { ReactNode } from 'react';
 
-interface MainNavbarProps { children: ReactNode }
+interface NavbarLayoutProps { children: ReactNode }
 
-function MainNavbar({ children }: MainNavbarProps) {
+function NavbarLayout({ children }: NavbarLayoutProps) {
 
   return (
     <div className="navbar-fixed">
@@ -22,4 +22,4 @@ function MainNavbar({ children }: MainNavbarProps) {
   );
 }
 
-export default MainNavbar;
+export default NavbarLayout;

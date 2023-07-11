@@ -4,7 +4,7 @@ import AboutSection from "@/components/landing/aboutSection";
 import ContactSection from "@/components/landing/contactSection";
 import GallerySection from "@/components/landing/gallerySection";
 import HeroSection from "@/components/landing/heroSection";
-import MainNavbar from "@/components/navbars/mainNavbar";
+import MainNavbar from "@/components/navbars/navbarLayout";
 import ProfileVideoSection from "@/components/landing/profileVideoSection";
 import NavbarItems from "@/components/navbars/navbarItems";
 

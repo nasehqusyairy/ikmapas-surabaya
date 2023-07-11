@@ -30,13 +30,13 @@ function Comments() {
   return (
     <div className="py-5">
       <h3>5 Komentar</h3>
-      {data.map(el => (
-        <>
+      {data.map((el, i) => (
+        <div key={i}>
           <Comment img={el.img} name={el.name} datetime={el.datetime} body={el.body} />
-          {el.replies.map(eli => (
-            <Comment img={eli.img} name={eli.name} datetime={eli.datetime} body={eli.body} isReplying={true} />
+          {el.replies.map((eli, i) => (
+            <Comment key={i} img={eli.img} name={eli.name} datetime={eli.datetime} body={eli.body} isReplying={true} />
           ))}
-        </>
+        </div>
       ))}
 
       <div>

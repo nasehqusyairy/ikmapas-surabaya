@@ -11,7 +11,7 @@ function login() {
       <p><Link href="/auth/forget" className="text-primary">Lupa Sandi ?</Link></p>
       <div className="d-grid gap-2">
         <button className="btn btn-primary">Masuk</button>
-        <Link href="/auth/register" className="btn btn-outline-primary tombol-daftar">Daftar</Link>
+        <Link href="/auth/register" className="btn btn-secondary tombol-daftar">Daftar</Link>
       </div>
       <p className="text-center m-0 mt-3">
         <Link href="/" className="text-primary">Kembali ke Beranda</Link>
