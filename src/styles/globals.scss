@@ -260,6 +260,10 @@ hr.dashed {
   }
 }
 
+#auth a {
+  text-decoration: none;
+}
+
 a:not(.nav-link):not(.btn):not(.navbar-brand):hover {
   text-decoration: underline !important;
 }

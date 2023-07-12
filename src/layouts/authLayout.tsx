@@ -7,7 +7,7 @@ interface AuthLayoutProps {
 
 function AuthLayout({ children, title }: AuthLayoutProps) {
   return (
-    <main className='bg-primary'>
+    <main id="auth" className='bg-primary'>
       <div className="container">
         <div className="row justify-content-center align-content-center" style={{ height: '100vh' }}>
           <div className="col-12 col-md-6 col-lg-4">

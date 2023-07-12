@@ -12,6 +12,14 @@ function News() {
       <NavbarLinks />
       <section className="py-5" style={{ minHeight: '100vh' }}>
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-12 col-lg-6">
+              <form className="input-group input-group-lg mb-3" role="search">
+                <input className="form-control" type="search" placeholder="Cari di Sini..." />
+                <button className="btn btn-primary" type="button"><i className="bi bi-search"></i></button>
+              </form>
+            </div>
+          </div>
           <h1 className="fw-bold">Berita Terkini</h1>
           <hr />
           <div className="row">
