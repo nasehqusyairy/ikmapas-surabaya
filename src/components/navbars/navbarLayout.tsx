@@ -11,7 +11,7 @@ function NavbarLayout({ children }: NavbarLayoutProps) {
     <div className="navbar-fixed">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow">
         <div className="container">
-          <Link className="navbar-brand text-primary" href="/" >
+          <Link className="navbar-brand text-body" href="/" >
             <Image src={logo} height={50} alt="Logo IKMAPAS Surabaya" className="me-3" />
             IKMAPAS
           </Link>

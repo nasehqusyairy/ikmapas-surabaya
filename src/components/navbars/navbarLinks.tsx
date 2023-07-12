@@ -5,11 +5,11 @@ function NavbarLinks() {
   return (
     <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <Link className="nav-link text-center" href="/">Beranda</Link>
-        <Link className="nav-link text-center" href="/#about">Tentang</Link>
-        <Link className="nav-link text-center" href="/#gallery">Galeri</Link>
-        <Link className="nav-link text-center" href="/#contact">Kontak</Link>
-        <Link className="nav-link text-center" href="/#news">Berita</Link>
+        <a className="nav-link text-center" href="#">Beranda</a>
+        <a className="nav-link text-center" href="#about">Tentang</a>
+        <a className="nav-link text-center" href="#gallery">Galeri</a>
+        <a className="nav-link text-center" href="#contact">Kontak</a>
+        <a className="nav-link text-center" href="#news">Berita</a>
         <ThemeOptions />
         <form className="d-flex mb-3 mb-lg-0 me-lg-3 input-group" role="search">
           <input className="form-control" type="search" placeholder="Cari di Sini..." />

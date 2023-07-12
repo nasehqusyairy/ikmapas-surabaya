@@ -13,7 +13,7 @@ function NewsSection() {
           <div className="col-12 col-lg-8 mb-3">
             <div className="row">
               <div className="col-12 col-lg-8 mb-3">
-                <Link href='/news/judul-artikel-1'>
+                <Link className='text-decoration-none' href='/news/judul-artikel-1'>
                   <div className="card news-preview main-news" style={{ backgroundImage: `url('${img1.src}')` }}>
                     <div className="card-body d-flex flex-column justify-content-end text-white">
                       <p className='fw-bold text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit.sit amet consectetur adipisicing elit.</p>
@@ -40,24 +40,14 @@ function NewsSection() {
           </div>
           <div className="col-12 col-lg-4 mb-3">
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">
-                <Link href='/news/judul-artikel-4'>
-                  <p className='fw-bold'>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</p>
-                  <small className='text-muted'>1 hari lalu</small>
-                </Link>
-              </li>
-              <li className="list-group-item">
-                <p className='fw-bold'>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <small className='text-muted'>1 hari lalu</small>
-              </li>
-              <li className="list-group-item">
-                <p className='fw-bold'>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <small className='text-muted'>1 hari lalu</small>
-              </li>
-              <li className="list-group-item">
-                <p className='fw-bold'>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <small className='text-muted'>1 hari lalu</small>
-              </li>
+              {[0, 1, 2, 3].map((e, i) => (
+                <li className="list-group-item" key={i}>
+                  <Link className="text-decoration-none text-body" href='/news/judul-artikel-4'>
+                    <p className='fw-bold'>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <small className='text-muted'>1 hari lalu</small>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -33,13 +33,10 @@ function newsDetail() {
                       <span className="badge bg-warning">#Olahraga</span>
                     </p>
                     <h2 className="fw-bold">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h2>
-                    <div className="d-flex justify-content-center align-items-center flex-wrap p-0">
-                      <p className="text-white"><Image width={40} src={photo} className="me-2 rounded-circle" alt="" /></p>
-                      {/* <p className="text-white"><img width={40} src='https://picsum.photos/100' className="me-2 rounded-circle" alt="" /></p> */}
-                      <p className="text-white">by Fairuzul Wafy</p>
-                      <p className="text-white mx-1">•</p>
-                      <p className="text-white">08 April 2023</p>
-                    </div>
+                    <span className="text-white"><Image width={40} src={photo} className="me-2 rounded-circle" alt="" /></span>
+                    <span className="text-white">by Fairuzul Wafy</span>
+                    <span className="text-white mx-1">•</span>
+                    <span className="text-white">08 April 2023</span>
                   </div>
                 </div>
               </div>

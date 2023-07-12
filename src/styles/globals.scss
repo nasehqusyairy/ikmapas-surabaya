@@ -125,7 +125,7 @@ $carousel-control-next-icon-bg: url('data:image/svg+xml,<svg xmlns="http://www.w
 
 * {
   // font-family: "Poppins", sans-serif;
-  transition: background-color .5s;
+  transition: all .5s;
 }
 
 // a {
@@ -258,4 +258,8 @@ hr.dashed {
     }
 
   }
+}
+
+a:not(.nav-link):not(.btn):hover {
+  text-decoration: underline !important;
 }
