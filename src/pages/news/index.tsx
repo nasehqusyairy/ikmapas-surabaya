@@ -74,7 +74,7 @@ function News() {
                   </div>
                 </div>
                 <h5 className="card-title mb-3"> <Link className="text-decoration-none text-body" href='/news/blog-1'>Lorem ipsum dolor sit amet consectetur</Link> </h5>
-                <p className="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p className="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card content.</p>
                 <span ><img width={40} src={img4.src} className="me-3 rounded-circle" alt="" /></span>
                 <span >by Fairuzul Wafy</span>
                 <span className="mx-1">•</span>
