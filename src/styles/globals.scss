@@ -260,6 +260,6 @@ hr.dashed {
   }
 }
 
-a:not(.nav-link):not(.btn):hover {
+a:not(.nav-link):not(.btn):not(.navbar-brand):hover {
   text-decoration: underline !important;
 }

@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import PreviewImageContext from "./previewImageContext";
+import { PreviewImageContext } from "../../../context/previewImage/previewImageContext";
 import datetime from "@/helpers/datetime";
 import filterstring from "@/helpers/filterstring";
 

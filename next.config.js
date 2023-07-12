@@ -4,8 +4,7 @@ const withPWA = require("next-pwa")({
   disable: process.env.NODE_ENV === 'development'
 });
 const nextConfig = {
-  reactStrictMode: true,
-  images: { unoptimized: true }
+  reactStrictMode: true
 }
 
 module.exports = withPWA(nextConfig)

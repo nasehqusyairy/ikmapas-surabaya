@@ -1,4 +1,5 @@
-import FBScript from "@/helpers/FBScript";
+// import FBScript from "@/helpers/FBScript";
+import { GlobalStateProvider } from "@/context/globalContext";
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -21,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [])
   return (
-    <div>
+    <GlobalStateProvider>
       <Head>
         <title>IKMAPAS Surabaya</title>
       </Head>
@@ -29,6 +30,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
 
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossOrigin="anonymous" />
-    </div>
+    </GlobalStateProvider>
   )
 }
