@@ -125,7 +125,7 @@ $carousel-control-next-icon-bg: url('data:image/svg+xml,<svg xmlns="http://www.w
 
 * {
   // font-family: "Poppins", sans-serif;
-  transition: all .5s;
+  transition: background-color .5s;
 }
 
 .btn {
@@ -270,4 +270,28 @@ hr.dashed {
 
 a:not(.nav-link):not(.btn):not(.navbar-brand):hover {
   text-decoration: underline !important;
+}
+
+iframe {
+  // width: 100%;
+  min-height: 350px;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: #999;
+  -webkit-margin-before: 1em;
+  margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+  margin-block-end: 1em;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+  padding: 0 5px 0 20px;
+  border: solid #b1b1b1;
+  border-width: 0 0 0 5px;
 }

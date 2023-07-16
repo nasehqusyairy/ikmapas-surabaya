@@ -1,8 +1,10 @@
+import MyComponent from "@/components/sunEditor";
 import dynamic from "next/dynamic";
 
-function add() {
-  const MyEditor = dynamic(() => import('@/components/myEditor'), { ssr: false })
-  return (<MyEditor />);
+function Add() {
+  // const MyEditor = dynamic(() => import('@/components/myEditor'), { ssr: false })
+  // return (<MyEditor />);
+  return (<MyComponent />)
 }
 
-export default add;
+export default Add;

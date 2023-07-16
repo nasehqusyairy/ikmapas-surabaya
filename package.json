@@ -18,12 +18,15 @@
     "bootstrap-icons": "^1.10.3",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "mammoth": "^1.6.0",
     "next": "13.2.4",
     "next-pwa": "^5.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-quill": "^2.0.0",
     "sass": "^1.60.0",
+    "suneditor": "^2.45.1",
+    "suneditor-react": "^3.6.1",
     "typescript": "5.0.2"
   }
 }

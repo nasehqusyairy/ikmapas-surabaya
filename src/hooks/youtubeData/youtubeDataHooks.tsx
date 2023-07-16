@@ -10,6 +10,8 @@ const useYouTubeData = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      console.log('ok');
+
       try {
         const videoUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCqzdIrm7ET6UECCpNQLgkyg&maxResults=1&order=date&key=${decrypt(encryptedData)}`;
         const channelUrl = `https://youtube.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCqzdIrm7ET6UECCpNQLgkyg&maxResults=1&key=${decrypt(encryptedData)}`;

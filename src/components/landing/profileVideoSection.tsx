@@ -10,7 +10,7 @@ function ProfileVideoSection() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <iframe className="mb-3" style={{ width: '100%', minHeight: '350px' }} src={`https://www.youtube.com/embed/${videoId}`} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe className="mb-3 w-100" src={`https://www.youtube.com/embed/${videoId}`} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
           <div className="col-12 col-lg-6 d-flex flex-column justify-content-around" style={{ textAlign: 'justify' }}>
             <div>
