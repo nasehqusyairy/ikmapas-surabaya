@@ -32,7 +32,7 @@ function newsDetail() {
                       <span className="badge bg-primary me-1">#Berita Terkini</span>
                       <span className="badge bg-warning">#Olahraga</span>
                     </p>
-                    <h2 className="fw-bold">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h2>
+                    <h2 className="fw-bold">Wafi Ngetrol Kehilangan HP</h2>
                     <span className="text-white"><Image width={40} src={photo} className="me-2 rounded-circle" alt="" /></span>
                     <span className="text-white">by Fairuzul Wafy</span>
                     <span className="text-white mx-1">•</span>
