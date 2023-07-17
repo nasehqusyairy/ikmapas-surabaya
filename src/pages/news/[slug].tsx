@@ -1,13 +1,13 @@
 import { NextRouter, useRouter } from "next/router";
 import { ParsedUrlQuery } from "querystring";
-import img1 from '../../images/about.jpg';
+// import img1 from '../../images/about.jpg';
 import photo from '../../images/galeri-item (7).jpg';
 import ad from '../../images/adv.png';
 import Image from "next/image";
 import MainFooter from "@/components/footers/mainFooter";
 import { CSSProperties } from "react";
 import NavbarLinks from "@/components/navbars/mainNavbar";
-import Comments from "@/components/comments/comments";
+// import Comments from "@/components/comments/comments";
 
 function newsDetail() {
   //eslint-disable-next-line

@@ -13,7 +13,7 @@ function NavbarLayout({ children }: NavbarLayoutProps) {
         <div className="container">
           <Link className="navbar-brand text-body" href="/" >
             <Image src={logo} height={50} alt="Logo IKMAPAS Surabaya" className="me-3" />
-            IKMAPAS
+            IKMAPAS <span className="d-none d-md-inline">- SURABAYA</span>
           </Link>
           {children}
         </div>

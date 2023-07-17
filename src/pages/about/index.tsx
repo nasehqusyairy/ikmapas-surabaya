@@ -1,5 +1,5 @@
 import img1 from '../../images/about.jpg';
-import ad from '../../images/adv.png';
+import ad from '../../images/adv1.jpg';
 import Image from "next/image";
 import MainFooter from "@/components/footers/mainFooter";
 import { CSSProperties } from "react";
@@ -68,8 +68,12 @@ function newsDetail() {
               </div>
             </div>
             <div className="col-12 col-md-4 col-lg-3">
-              <Image src={ad} alt="" className="img-fluid mb-3" />
-              <Image src={ad} alt="" className="img-fluid" />
+              <a target='_blank' href="https://bit.ly/IkmapasMengabdi23">
+                <Image src={ad} alt="" className="rounded img-fluid mb-3" />
+              </a>
+              <a target='_blank' href="https://bit.ly/IkmapasMengabdi23">
+                <Image src={ad} alt="" className="rounded img-fluid mb-3" />
+              </a>
             </div>
           </div>
         </div>

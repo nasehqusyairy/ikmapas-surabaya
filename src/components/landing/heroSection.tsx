@@ -1,7 +1,8 @@
 import Image from "next/image";
 import img1 from "../../images/about.jpg";
-import img2 from "../../images/peresmian-web-ikmapas.jpg";
-import img3 from "../../images/wafy.jpg";
+import img2 from "../../images/Artboard 2.png";
+import img3 from "../../images/Artboard 1.png";
+import Link from "next/link";
 function HeroSection() {
   return (
     <section id="hero" className="pt-5">
@@ -29,14 +30,14 @@ function HeroSection() {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div className="carousel-inner">
+                {/* <div className="carousel-item active" data-bs-interval="3000">
+                  <Link href="/about"><Image src={img1} alt="" className="img-fluid rounded" /></Link>
+                </div> */}
                 <div className="carousel-item active" data-bs-interval="3000">
-                  <Image src={img1} alt="" className="img-fluid rounded" />
+                  <a target="_blank" href="https://bit.ly/IkmapasMengabdi23"><Image src={img2} alt="" className="img-fluid rounded" /></a>
                 </div>
                 <div className="carousel-item" data-bs-interval="3000">
-                  <Image src={img2} alt="" className="img-fluid rounded" />
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                  <Image src={img3} alt="" className="img-fluid rounded" />
+                  <Link target="_blank" href="https://chat.whatsapp.com/CgzY6fxq4Cr9dCxdB5mnHG"><Image src={img3} alt="" className="img-fluid rounded" /></Link>
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

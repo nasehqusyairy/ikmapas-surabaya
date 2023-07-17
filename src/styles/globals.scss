@@ -273,7 +273,7 @@ a:not(.nav-link):not(.btn):not(.navbar-brand):hover {
 }
 
 iframe {
-  // width: 100%;
+  width: 100%;
   min-height: 350px;
   margin-bottom: 1rem;
 }
@@ -294,4 +294,15 @@ blockquote {
   padding: 0 5px 0 20px;
   border: solid #b1b1b1;
   border-width: 0 0 0 5px;
+}
+
+.text-editor-result {
+  figure {
+    padding-bottom: 0 !important;
+  }
+
+  iframe,
+  figure {
+    max-width: 100%;
+  }
 }

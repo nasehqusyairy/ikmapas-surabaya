@@ -79,11 +79,15 @@ const MyComponent = () => {
           <input type="file" onChange={convert} name="doc" id="doc" className='form-control mb-3' />
           <p> My Other Contents </p>
           <div className="mb-3">
-            <SunEditor setContents={value} setOptions={options} onChange={logVal} />
+            <SunEditor height='300' setContents={value} setOptions={options} onChange={logVal} />
           </div>
           <p>Output</p>
           <div className="card">
-            <div className="card-body" dangerouslySetInnerHTML={{ __html: value }}></div>
+            <div className="card-body text-editor-result" dangerouslySetInnerHTML={{ __html: value }}></div>
+          </div>
+          <p>Output HTML</p>
+          <div className="card">
+            <div className="card-body">{value}</div>
           </div>
         </div>
       </div>
