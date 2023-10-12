@@ -305,4 +305,22 @@ blockquote {
   figure {
     max-width: 100%;
   }
+
+  table,
+  tr,
+  td {
+    border: 1px solid $body-color;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .se-component {
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+
 }

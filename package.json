@@ -18,6 +18,7 @@
     "bootstrap-icons": "^1.10.3",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "katex": "^0.16.8",
     "mammoth": "^1.6.0",
     "next": "13.2.4",
     "next-pwa": "^5.6.0",
@@ -28,5 +29,8 @@
     "suneditor": "^2.45.1",
     "suneditor-react": "^3.6.1",
     "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.1"
   }
 }

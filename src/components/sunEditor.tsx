@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import 'suneditor/dist/css/suneditor.min.css'; // Import Sun Editor's CSS File
 import { SunEditorOptions } from 'suneditor/src/options';
 import convertDocxToHtml from '@/helpers/docxtohtml';
+// import katex from 'katex';
 
 const SunEditor = dynamic(() => import("suneditor-react"), {
   ssr: false,
@@ -15,9 +16,15 @@ const MyComponent = () => {
   const options: SunEditorOptions = {
     "mode": "classic",
     "rtl": false,
-    "katex": "window.katex",
-    "imageGalleryUrl": "https://etyswjpn79.execute-api.ap-northeast-1.amazonaws.com/suneditor-demo",
+    // "katex": katex,
+    "imageWidth": "50%",
+    "imageSizeOnlyPercentage": true,
+    "imageUploadSizeLimit": 3000000,
+    "imageResizing": true,
+    "imageAlignShow": false,
     "videoFileInput": false,
+    "videoResizing": true,
+    "videoAlignShow": false,
     "tabDisable": false,
     "buttonList": [
       [
@@ -26,7 +33,7 @@ const MyComponent = () => {
         "font",
         "fontSize",
         "formatBlock",
-        "paragraphStyle",
+        // "paragraphStyle",
         "blockquote",
         "bold",
         "underline",
@@ -36,35 +43,38 @@ const MyComponent = () => {
         "superscript",
         "fontColor",
         "hiliteColor",
-        "textStyle",
+        // "textStyle",
         "removeFormat",
         "outdent",
         "indent",
         "align",
-        "horizontalRule",
+        // "horizontalRule",
         "list",
-        "lineHeight",
+        // "lineHeight",
         "table",
         "link",
         "image",
         "video",
         "audio",
-        "math",
-        "imageGallery",
+        // "math",
+        // "imageGallery",
         "fullScreen",
         "showBlocks",
-        "codeView",
-        "preview",
+        // "codeView",
+        // "preview",
         "print",
-        "save",
-        "template"
+        // "save",
+        // "template"
       ]
     ]
   }
 
+  const wrapDivsWithClass = (htmlString: string) => htmlString.replace(/<div[^>]*class="se-component[^>]*"[^>]*>.*?<\/div>/g, (str: string) => `<div class="row justify-content-center"><div class="col-12 col-md-6 mb-3">${str}</div></div>`);
+
   const logVal = (val: string) => {
     // console.log(val);
-    setValue(val)
+    setValue(wrapDivsWithClass(val))
+    // setValue(val)
   }
 
   const convert = (e: any) => {

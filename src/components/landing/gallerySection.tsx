@@ -3,12 +3,13 @@ import { PreviewImageContext, PreviewImageContextProvider } from '../../context/
 import { useContext, useEffect } from 'react';
 import axios from 'axios';
 import { useGlobalStateContext } from '@/context/globalContext';
-import { decrypt } from '@/helpers/encrypter';
+import { decrypt, encrypt } from '@/helpers/encrypter';
 
 function InnerSection() {
   const { instagramResponses, setInstagramResponses } = useGlobalStateContext();
 
-  const encryptedData = { "iv": "4163d81bcebe78bd163e4d9c963cae02", "key": "3850983b58ace169621147ac087c2597e3d37a0b81f8cd85dd0b968cd3dd170e", "encrypted": "7f817d9cca5cb49da9004ca0f0e4459b3ce71fad84c55db1c6b1dea6ca79307517091d1aec4a2ab6993f0e44eecc52828affb555540cfe8fad7c2a12055f0e6795dd7f822a71e4f7cd655859f6bd875a9fe8e97d5c2c659b337d1ab4a413e2e8ac2ac546dbe79261fe6f22221e575165569c20fce784746a6adbedc3d5f3b66aa80ae6970c4753111137cd4e4df63d54d333db4d426b99433a95f5e51fdcc4a8072fe70d994ae3b9d4cdae97ba1a5b26" }
+  const encryptedData = { "iv": "c1f80df633079ae78711e8d200f0e80e", "key": "29c25e5af97aad9414bc07c697df9d21d2097c16ae75d2d97ebd70adb9b4b7a0", "encrypted": "a3eb30dbfe618f12e8a76fd8ca5eea6d1e4c3053a9bfc532a0ff23e57996e87a91973ee267fc76ae6200ede3965e30dea8cf9d403ca54cb3f8f57039395fa264c2b11e9e2e7085d9bee299dc7d94620f2fd35340d86826f9ab4c7408a6ee17bffffc8ec10ea1bb3387e243e6b6435f6aa57a3215430504c28f7c2bd8e118aeed8f9e054d1f1e8309d7ddd3490c8335e806fe17fdb890b718f078f11fb4548b33e4e4836e76dbf11998b8bb581a41c117" }
+
 
   const getData = async () => {
     if (instagramResponses.length === 0) {
